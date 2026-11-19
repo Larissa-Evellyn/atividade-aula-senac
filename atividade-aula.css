@@ -1,0 +1,224 @@
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: white;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 110px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #07549a;
+    font-weight: bold;
+}
+
+/* Efeito ao passar o mouse */
+nav a:hover {
+    color: #f47721;
+}
+
+/* Efeito ao navegar com Tab */
+a:focus {
+    outline: 2px solid #f47721;
+}
+
+/* Apresentação */
+.inicio {
+    background-color: #e8f2fa;
+    padding: 70px 8%;
+    display: flex;
+    align-items: center;
+}
+
+.apresentacao {
+    max-width: 600px;
+}
+
+.apresentacao h1 {
+    font-size: 40px;
+    color: #064579;
+    margin-bottom: 20px;
+}
+
+.apresentacao h1 span {
+    color: #f47721;
+}
+
+.apresentacao p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #f47721;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #d85f12;
+}
+
+/* Seção de cursos */
+.cursos {
+    padding: 55px 8%;
+    text-align: center;
+}
+
+.cursos h2 {
+    color: #064579;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    color: #666;
+    margin-bottom: 35px;
+}
+
+/* Flexbox dos cards */
+.container-cursos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+/* Cards */
+.card {
+    background-color: white;
+    width: 230px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    transition: 0.3s;
+}
+
+/* Primeiro card diferente */
+.card:first-child {
+    border-top: 5px solid #f47721;
+}
+
+/* Efeito nos cards */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px #00000020;
+}
+
+/* Imagens ilustrativas dos cursos */
+.imagem {
+    height: 120px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.tecnologia {
+    background: linear-gradient(135deg, #07549a, #5ca6d8);
+}
+
+.interiores {
+    background: linear-gradient(135deg, #9b735e, #e5c3a5);
+}
+
+.gastronomia {
+    background: linear-gradient(135deg, #b94e2c, #f3a05e);
+}
+
+.moda {
+    background: linear-gradient(135deg, #79527e, #d49ab1);
+}
+
+.card h3 {
+    color: #064579;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.card .carga {
+    font-weight: bold;
+    color: #07549a;
+    font-size: 12px;
+}
+
+.card a {
+    display: inline-block;
+    color: #f47721;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color: #064579;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 7px;
+    font-size: 13px;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .inicio {
+        padding: 45px 8%;
+    }
+
+    .apresentacao h1 {
+        font-size: 30px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
